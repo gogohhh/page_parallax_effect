@@ -6,10 +6,22 @@
     align-items: center;
 }
 
+.padding-div {
+    width: 800px;
+    padding: 0px 10px 0px 10px;
+    background: rgb(255, 172, 78);
+    transition: background-color 2s, width 5s;
+}
+
+.padding-div:hover{
+    background: rgb(89, 71, 252);
+    width: 1000px;
+}
+
 .titulo{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 90px;
-    color: rgb(49, 49, 49);
+    font-size: 80px;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: center;
 }
