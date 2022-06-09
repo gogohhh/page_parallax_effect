@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.parallax {
+    /*background-image: url("../images/cuetzalanpuebla.jpeg");*/
+    background: #FFF fixed no-repeat 50% 50%;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#section1{
+    background-image: url("../images/cuetzalanpuebla.jpeg");
+}
+
+#section2{
+    background-image: url("../images/cuetzalan_cuevas_cascadas.jpg");
+}
+
+#section3{
+    background-image: url("../images/grutas-en-Cuetzalan-770x578.jpg");
+}
