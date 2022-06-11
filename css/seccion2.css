@@ -1,0 +1,37 @@
+.top_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+
+.animado {
+    opacity: 0;
+    transition-duration: 5s;
+}
+
+.titulo-3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.initial-position{
+    padding-top: 180px;
+}
+
+.margin-0 {
+    margin: 0px!important;
+}
+
+.effect-s2 {
+    position: relative;
+    pointer-events: none;
+}
+
+.effect-s2:nth-child(even){
+    background: transparent;
+}

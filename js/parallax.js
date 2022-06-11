@@ -1,6 +1,17 @@
-const parallax = document.getElementById('backImg');
+let animado = document.querySelectorAll(".animado");
 
-function Scroll() {
+function mostrarScroll() {
+    console.log("scroll");
     let scrollTop = document.documentElement.scrollTop;
-    parallax.style.transform = 'translateY(-50%)';
+
+    for (var i=0; i < animado.length; i++) {
+
+        let alturaAnimado = animado[i].offsetTop;
+
+        if((alturaAnimado - 889) < scrollTop) {
+           animado[i].style.opacity = 1;
+        }
+    }
 }
+
+window.addEventListener('scroll', mostrarScroll);
