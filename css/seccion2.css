@@ -9,7 +9,20 @@
 
 .animado {
     opacity: 0;
-    transition-duration: 5s;
+    transition-duration: 4s;
+}
+
+.mostrarIzquierda{
+    animation: mostrarIzquierda 5s;
+}
+
+@keyframes mostrarIzquierda {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .titulo-3{
@@ -34,4 +47,8 @@
 
 .effect-s2:nth-child(even){
     background: transparent;
+}
+
+.col-5 {
+    width: 50%;
 }

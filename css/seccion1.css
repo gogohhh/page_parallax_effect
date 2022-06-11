@@ -43,3 +43,16 @@
     position: relative;
     transform-style: inherit;
 }
+
+.mostrarArriba {
+    animation: mostrarArriba 5s;
+}
+
+@keyframes mostrarArriba {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}

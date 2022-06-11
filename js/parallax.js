@@ -10,6 +10,7 @@ function mostrarScroll() {
 
         if((alturaAnimado - 889) < scrollTop) {
            animado[i].style.opacity = 1;
+           animado.classList.add("mostrarIzquierda");
         }
     }
 }
