@@ -13,6 +13,9 @@ body {
     overflow-x: hidden;
 }
 
+.display-flex {
+    display: flex;
+}
 .parallax {
     /*background-image: url("../images/cuetzalanpuebla.jpeg");*/
     background: #FFF fixed no-repeat 50% 50%;

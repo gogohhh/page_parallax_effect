@@ -6,6 +6,13 @@
     align-items: top;
 }
 
+.bottom_div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
 
 .animado {
     opacity: 0;
@@ -13,12 +20,27 @@
 }
 
 .mostrarIzquierda{
-    animation: mostrarIzquierda 5s;
+    animation: mostrarIzquierda 6s;
 }
 
 @keyframes mostrarIzquierda {
     0% {
         transform: translateX(-100%);
+        transition-duration: 3s;
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.mostrarDerecha {
+    animation: mostrarDerecha 6s;
+}
+
+@keyframes mostrarDerecha {
+    0% {
+        transform: translateX(100%);
+        transition-duration: 3s;
     }
     100% {
         transform: translateX(0%);
@@ -36,6 +58,10 @@
     padding-top: 180px;
 }
 
+.initial-position-bottom {
+    padding-top: 400px;
+}
+
 .margin-0 {
     margin: 0px!important;
 }
@@ -51,4 +77,9 @@
 
 .col-5 {
     width: 50%;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
