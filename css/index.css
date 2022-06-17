@@ -27,7 +27,11 @@ body {
 }
 
 #section1{
-    background-image: url("../images/cuetzalanpuebla.jpeg");
+    background: url("../images/cuetzalanpuebla.jpeg") no-repeat 50% 50%;
+    width: 100%;
+    height: calc(100vh);
+    position: relative;
+    background-size: cover;
 }
 
 #section2{

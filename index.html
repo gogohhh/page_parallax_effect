@@ -3,12 +3,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/seccion1.css">
     <link rel="stylesheet" href="./css/seccion2.css">
     <title>Home</title>
 </head>
 <body>
-    <section class="parallax" id="section1">
+    <div class="header">
+        <div class="header-content">
+            <div>
+                <h4 class="title-header">Cuetzalan</h4>
+            </div>
+            <div class="header-options">
+                <a class="header-link" href="#section1">Inicio</a>
+                <a class="header-link" href="#section2">Actividades</a>
+                <a class="header-link" href="#section3">Conoce más</a>
+            </div>
+        </div>
+    </div>
+    <section class="parallax section1" id="section1">
         <div class="center_div">
             <div class="padding-div mostrarArriba">
                 <h1 class="titulo efect-titulo">Disfruta Cuetzalan</h1>
@@ -32,4 +45,14 @@
     </section>
 </body>
 <script src="./js/parallax.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        
+        var scrollPos = $(this).scrollTop();
+        $('#section1').css({
+            'background-size': 100 + scrollPos + '%'
+        });
+    });
+</script>
 </html>
