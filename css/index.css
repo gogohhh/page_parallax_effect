@@ -41,3 +41,7 @@ body {
 #section3{
     background-image: url("../images/grutas-en-Cuetzalan-770x578.jpg");
 }
+
+#section3:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
