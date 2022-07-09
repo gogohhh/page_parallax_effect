@@ -79,6 +79,17 @@
     width: 50%;
 }
 
+.pad-top-desc {
+    padding-top: 20px;
+}
+
+.text-desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
 .link {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -101,3 +112,38 @@
     color: rgb(47, 206, 55);
     font-weight: bold;
 }
+
+.check-list {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.check-list li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: beige;
+    text-decoration: none;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
